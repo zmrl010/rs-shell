@@ -1,0 +1,10 @@
+[package]
+name = "rsh"
+version = "0.1.0"
+edition = "2021"
+description = "Unix shell commands implemented in Rust!"
+readme = "README.md"
+license = "MIT"
+keywords = ["rust", "unix", "shell", "command"]
+
+[dependencies]

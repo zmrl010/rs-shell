@@ -1,0 +1,9 @@
+{
+  "cSpell.words": [
+    "rucore",
+    "rustutils"
+  ],
+  "evenBetterToml.formatter.allowedBlankLines": 1,
+  "evenBetterToml.formatter.columnWidth": 80,
+  "editor.formatOnSave": true
+}

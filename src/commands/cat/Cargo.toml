@@ -1,0 +1,22 @@
+[package]
+name = "ru_cat"
+version = "0.1.0"
+authors = ["zmrl"]
+license = "MIT"
+edition = "2021"
+description = "cat ~ (rutils) concatenate and display input"
+
+keywords = ["rust", "unix", "coreutils", "shell", "command"]
+
+[lib]
+path = "src/cat.rs"
+
+[dependencies]
+clap = { version = "3.2", features = ["wrap_help", "cargo"] }
+thiserror = "1.0"
+atty = "0.2"
+rucore = { version = "*", package = "rucore", path="../../rucore"}
+
+[[bin]]
+name = "cat"
+path = "src/main.rs"

@@ -1,9 +1,9 @@
 use std::{env, process};
 
-use rsh::config::Config;
+use rucore::config::Config;
 
 fn main() {
-    let config = Config::build(env::args()).unwrap_or_else(|err| {
+    let _config = Config::build(env::args()).unwrap_or_else(|err| {
         eprintln!("Problem parsing arguments: {err}");
         process::exit(1)
     });

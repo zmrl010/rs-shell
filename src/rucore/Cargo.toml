@@ -1,0 +1,19 @@
+[package]
+name = "rucore"
+version = "0.1.0"
+edition = "2021"
+authors = ["zmrl"]
+license = "MIT"
+description = "rustutils core module"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+clap = "3.2"
+dns-lookup = { version="1.0.5", optional=true }
+dunce = "1.0.0"
+wild = "2.0"
+glob = "0.3.0"
+itertools = { version="0.10.0", optional=true }
+thiserror = { version="1.0", optional=true }

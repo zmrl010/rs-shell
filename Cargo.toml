@@ -1,10 +1,16 @@
 [package]
-name = "rsh"
+name = "rustutils"
 version = "0.1.0"
 edition = "2021"
-description = "Unix shell commands implemented in Rust!"
+description = "GNU coreutils implemented in Rust!"
 readme = "README.md"
 license = "MIT"
-keywords = ["rust", "unix", "shell", "command"]
+keywords = ["rust", "unix", "coreutils", "shell", "command"]
 
-[dependencies]
+[dependencies] 
+clap = { version = "3.2", features = ["wrap_help", "cargo"] }
+clap_complete = "3.1"
+
+rucore = { version = "*", package = "rucore", path = "src/rucore"}
+
+cat = { optional=true, version="0.1.0", package="ru_cat", path="src/commands/cat" }
